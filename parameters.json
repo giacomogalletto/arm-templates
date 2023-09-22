@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_lsps_vnet_name": {
+            "defaultValue": "lsps-vnet",
+            "type": "String"
+        },
+        "connections_VPN_verso_Mikrotik_name": {
+            "defaultValue": "VPN-verso-Mikrotik",
+            "type": "String"
+        },
+        "privateEndpoints_dev_server_ep_name": {
+            "defaultValue": "dev-server-ep",
+            "type": "String"
+        },
+        "publicIPAddresses_IP_VPN_GW_lsps_vnet_name": {
+            "defaultValue": "IP-VPN-GW-lsps-vnet",
+            "type": "String"
+        },
+        "virtualNetworkGateways_VPN_GW_lsps_vnet_name": {
+            "defaultValue": "VPN-GW-lsps-vnet",
+            "type": "String"
+        },
+        "localNetworkGateways_Rete_Local_Mikrotik_name": {
+            "defaultValue": "Rete-Local-Mikrotik",
+            "type": "String"
+        },
+        "privateDnsZones_privatelink_database_windows_net_name": {
+            "defaultValue": "privatelink.database.windows.net",
+            "type": "String"
+        },
+        "servers_dev_sqlserver_lsps_externalid": {
+            "defaultValue": "/subscriptions/291469d5-41a1-4581-821c-1ac631a1175e/resourceGroups/Database-RG/providers/Microsoft.Sql/servers/dev-sqlserver-lsps",
+            "type": "String"
+        }
+    }
+}
